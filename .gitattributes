@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Exclude frontend files from language stats
+*.html linguist-detectable=true
+*.css linguist-detectable=false
+*.js linguist-detectable=true
+
+# Ensure Java is treated as main language
+*.java linguist-language=Java
